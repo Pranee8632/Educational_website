@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Educa</title>
+
+    <!-- linking the css page -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <!--cdn of fontawesome for the icons -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+    <!-- cdn for jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <!-- Logo of the website -->
+        <img src="images/Liceria & Co..png" alt="">
+
+        <!--Navigation Links -->
+        <div class="navigation">
+            <ul class="active">
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a href="index.html">Home </a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <img id='menu-btn' src="images/menu.png" alt="">
+        </div>
+
+    </nav>
+
+    <!-- Home -->
+    <!-- This is section is for the aboutUS banner (hero section) -->
+    <section id="about-home">
+        <h2>About US</h2>
+    </section>
+
+    <section id="about-container">
+        <div class="about-img">
+            <img src="images/a.png" alt="">
+        </div>
+
+        <div class="about-text">
+            <h2>Welcome to TechEduca, Enhance your skills with best Online Courses</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ut neque ipsum ducimus. Deserunt nisi dicta numquam magnam quaerat laborum molestias earum exercitationem est, perspiciatis illo sapiente dignissimos sit illum.</p>
+            <div class="about-fe">
+                <img src="images/fe1.png" alt="">
+                <div class="fe-text">
+                    <h5>400+ Courses</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, eius.</p>
+                </div>
+            </div>
+            <div class="about-fe">
+                <img src="images/fe2.png" alt="">
+                <div class="fe-text">
+                    <h5>400+ Courses</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, eius.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- features section -->
+    <section id="features">
+    <h1>Awesome Feature</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <!-- div is for showcasing the features -->
+    <div class="fea-base">
+        <!-- Each individual feature -->
+        <div class="fea-box">
+            <i class="fas fa-graduation-cap"></i>
+            <h3>Scholarship Facility</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, veritatis.</p>
+        </div>
+        <div class="fea-box">
+            <i class="fas fa-file-certificate"></i>
+            <h3>Online Courses</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, veritatis.</p>
+        </div>
+        <div class="fea-box">
+            <i class="fas fa-award"></i>
+            <h3>Global Certification</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, veritatis.</p>
+        </div>
+    </div>
+    </section>
+
+    <!-- Trusted by section -->
+    <section id="trust">
+        <h1>Trusted By</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="trust-img">
+            <img src="images/trust (1).png" alt="">
+            <img src="images/trust (2).png" alt="">
+            <img src="images/trust (3).png" alt="">
+            <img src="images/trust (4).png" alt="">
+            <img src="images/trust (5).png" alt="">
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+    <div class="footer-col">
+        <h3>Top Products</h3>
+        <li>MAnage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Services</li>
+    </div>
+    <div class="footer-col">
+        <h3>QUick Links</h3>
+        <li>Jobs</li>
+        <li>Brand Assets</li>
+        <li>investor Relations</li>
+        <li>Terms of Service</li>
+    </div>
+    <div class="footer-col">
+        <h3>Features</h3>
+        <li>Manage Reputation</li>
+        <li>Marketing Services</li>
+        <li>Power Tools</li>
+        <li>Jobs</li>
+    </div>
+    <div class="footer-col">
+        <h3>Resources</h3>
+        <li>Guides</li>
+        <li>Experts</li>
+        <li>Research</li>
+        <li>Managed Website</li>
+        
+    </div>
+
+    <!-- Newsletter part -->
+    <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p>Promo Codes Just for you!!!</p>
+        <div class="subscribe">
+            <input type="text" placeholder="Your Email Address">
+            <a href="#" class="yellow">SUBSCRIBE</a>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright © 2024 All rights reserved</p>
+        <div class="pro-links">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+    </div>
+    </footer>
+
+    <!-- jquery script -> which works when we are using website in tablet or mobile to display the menu bar   -->
+    <script>
+        $('#menu-btn').click(function(){
+            $('nav .navigation ul').addClass('active')
+        });
+
+        $('#menu-close').click(function(){
+            $('nav .navigation ul').removeClass('active')
+        });
+    </script>
+    
+</body>
+</html> 
